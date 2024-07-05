@@ -31,7 +31,7 @@ if __name__ == "__main__":
     record=1
     while record==1:
         record_audio_with_keyboard_control("input.pcm") # 控制录音
-        send_file('http://10.176.34.117:5000/upload', 'input.pcm')  # 将录音文件发送到服务器
+        send_file('http://your_ip/upload', 'input.pcm')  # 将录音文件发送到服务器
         p = pyaudio.PyAudio()
         stream = p.open(format=p.get_format_from_width(2), channels=1, rate=16000, output=True)
         with open("returned_input.pcm", "rb") as f:
