@@ -17,7 +17,7 @@ def send_file(url, filename):
 
 # 主函数
 def main():
-    url = 'http://10.176.34.117:5000/upload'  # 修改为你的服务器 URL
+    url = 'http://your_ip/upload'  # 修改为你的服务器 URL
     count=0
     while True:
         filename = f'image_{count}.jpg'
